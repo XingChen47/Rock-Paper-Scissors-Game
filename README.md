@@ -21,12 +21,12 @@ cd Rock-Paper-Scissors
 
 #### **Linux/macOS**
 ```sh
-g++ -o rps_game "RPS Game.cpp"
+g++ -o Rock_Paper_Scissors "RPS Game.cpp"
 ```
 
 #### **Windows (using MinGW)**
 ```sh
-g++ -o rps_game.exe "RPS Game.cpp"
+g++ -o Rock_Paper_Scissors.exe "RPS Game.cpp"
 ```
 *Make sure `g++` is available in your PATH. If using another compiler, adjust the command accordingly.*
 
@@ -36,21 +36,14 @@ Run the program from the command line:
 
 **Linux/macOS:**
 ```sh
-./rps_game
+./Rock_Paper_Scissors
 ```
 
 **Windows:**
 ```sh
-rps_game.exe
+Rock_Paper_Scissors.exe
 ```
 
-**Example Output:**
-```
-Welcome to Rock Paper Scissors!
-Enter your choice (rock, paper, scissors): rock
-Computer chose: scissors
-You win!
-```
 
 ## How it Works
 
