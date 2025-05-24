@@ -1,51 +1,59 @@
-# Introduction to GitHub
+# Rock Paper Scissors Game
 
-_Get started using GitHub in less than an hour._
+A C++ program that allows you to play the classic Rock Paper Scissors game against the computer, with a user-friendly command-line interface. The program is cross-platform and works on Linux, Windows, and macOS.
 
-## Welcome
+## Features
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+- Play Rock Paper Scissors against the computer
+- Random computer moves for fair play
+- Simple command-line interface
+- Cross-platform compatibility: Linux, Windows, macOS
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+## Installation
 
-In this exercise, you will:
+### 1. Clone the repository
+```sh
+git clone https://github.com/XingChen47/Rock-Paper-Scissors.git
+cd Rock-Paper-Scissors
+```
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+### 2. Compile the program
 
-### How to start this exercise
+#### **Linux/macOS**
+```sh
+g++ -o rps_game "RPS Game.cpp"
+```
 
-1. Right-click **Copy Exercise** and open the link in a new tab.
+#### **Windows (using MinGW)**
+```sh
+g++ -o rps_game.exe "RPS Game.cpp"
+```
+*Make sure `g++` is available in your PATH. If using another compiler, adjust the command accordingly.*
 
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
+## Usage
 
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.chttps://github.com/XingChen47/skills-introduction-to-github/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
+Run the program from the command line:
 
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
+**Linux/macOS:**
+```sh
+./rps_game
+```
 
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
+**Windows:**
+```sh
+rps_game.exe
+```
 
-   <a id="start-exercise" href="https://github.com/XingChen47/skills-introduction-to-github/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
+**Example Output:**
+```
+Welcome to Rock Paper Scissors!
+Enter your choice (rock, paper, scissors): rock
+Computer chose: scissors
+You win!
+```
 
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
+## How it Works
 
----
-
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+1. **User Input:** The program prompts you to enter your choice: rock, paper, or scissors.
+2. **Computer Move:** The computer randomly selects its move.
+3. **Determine Winner:** The program compares the choices to determine the winner and displays the result.
