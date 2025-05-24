@@ -72,7 +72,7 @@ char getUserChoice(){
         std::cout << "************************************\n";
         std::cin >> player1;
     	
-        if(player1 != 'r' || player1 != 'p' || player1 != 's'){
+        if(player1 != 'r' && player1 != 'p' && player1 != 's'){
             std::cout << "Choice is invalid!\n";
         }
 
